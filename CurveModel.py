@@ -16,7 +16,7 @@ class CurveModel:
         self.PRECISION = 10**18
         self.precisions = [10**12, 10**10, 1]
         
-    def out(self, amount_in, sell=2, buy=1):
+    def amount_out(self, amount_in, sell=2, buy=1):
         price_scale = [p for p in self.price_scale]
         xp = [self.balances[i] for i in range(self.N)]
         xp[sell] += amount_in

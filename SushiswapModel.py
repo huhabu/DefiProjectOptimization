@@ -4,7 +4,7 @@ class SushiswapModel:
         self.y = y
         self.x = x
         
-    def cost(self, amount_in):
+    def amount_out(self, amount_in):
         return self.y - (self.K / (self.x + amount_in))
 
 
